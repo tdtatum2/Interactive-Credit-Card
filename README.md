@@ -18,8 +18,8 @@ This is a solution to the [Interactive card details form challenge on Frontend M
 
 ### Screenshots
 
-![](./src/assets/images/desktop.PNG)
-![](./src/assets/images/mobile.PNG)
+![](./src/assets/images/desktop.png)
+![](./src/assets/images/mobile.png)
 
 ### Links
 
