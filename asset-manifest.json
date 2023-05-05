@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Interactive-Credit-Card/static/css/main.608667eb.css",
+    "main.js": "/Interactive-Credit-Card/static/js/main.542c0685.js",
+    "static/media/bg-main-desktop.png": "/Interactive-Credit-Card/static/media/bg-main-desktop.806e7aa7b4dbc1d78bc3.png",
+    "static/media/bg-card-back.png": "/Interactive-Credit-Card/static/media/bg-card-back.23f68fa3aa3d5b33dfc8.png",
+    "static/media/bg-card-front.png": "/Interactive-Credit-Card/static/media/bg-card-front.8153e2ca184402a8385f.png",
+    "static/media/bg-main-mobile.png": "/Interactive-Credit-Card/static/media/bg-main-mobile.caa4689407777a312ede.png",
+    "index.html": "/Interactive-Credit-Card/index.html",
+    "static/media/icon-complete.svg": "/Interactive-Credit-Card/static/media/icon-complete.8fd757c0c5c44b1d597ca411400e046d.svg",
+    "main.608667eb.css.map": "/Interactive-Credit-Card/static/css/main.608667eb.css.map",
+    "main.542c0685.js.map": "/Interactive-Credit-Card/static/js/main.542c0685.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.608667eb.css",
+    "static/js/main.542c0685.js"
+  ]
+}
