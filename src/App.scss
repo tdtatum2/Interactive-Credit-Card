@@ -1,0 +1,302 @@
+/* FONT IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+/* CSS RESET */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+/* VARIABLES */
+:root {
+  /* COLORS */
+  --white: hsl(0, 0%, 100%);
+  --light-violet: hsl(270, 3%, 87%);
+  --violet: hsl(279, 6%, 55%);
+  --dark-violet: hsl(278, 68%, 11%);
+  --red: hsl(0, 100%, 66%);
+
+  /* GRADIENTS */
+  --active-input-border: linear-gradient(90deg, hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+
+
+  /* FONTS */
+  --main-font: "Space Grotesk", "Times New Roman";
+}
+
+
+
+/* CUSTOM CSS */
+
+/* ACCESSIBILITY */
+.visibility-hidden {
+  position: absolute;
+  visibility: hidden;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+main {
+  font-family: var(--main-font);
+  height: 100%;
+}
+
+/* CREDIT CARD SECTION */
+
+.credit_card {
+  width: 100%;
+  height: 100%;
+  min-height: 250px;
+  color: var(--white);
+}
+
+.credit_card_background {
+  width: 100%;
+  height: 100%;
+  max-height: 250px;
+  position: relative;
+
+  @media screen and (min-width: 992px) {
+    max-height: 100%;
+  }
+}
+
+
+.credit_card_back, .credit_card_front {
+  width: 75%;
+  max-width: 400px;
+  aspect-ratio: 447 / 245;
+  position: absolute;
+
+  @media screen and (min-width: 992px) {
+    max-width: 600px;
+  }
+}
+
+.credit_card_back {
+  top: 12%;
+  right: 5%;
+  background: url(./assets/images/bg-card-back.png);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: calc(10px + 0.390635vw);
+  padding-right: calc(54px + 0.390635vw);
+  font-size: calc(10px + 0.390635vw);
+  letter-spacing: 2px;
+
+  @media screen and (min-width: 992px) {
+    top: 50%;
+    right: -50%;
+  }
+}
+
+.credit_card_front {
+  top: 50%;
+  left: 5%;
+  background: url(./assets/images/bg-card-front.png);
+  background-size: cover;
+  display: flex;
+
+  .large_circle, .small_circle {
+    position: absolute;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+  }
+
+  .large_circle {
+    width: 10%;
+    top: 10%;
+    left: 8%;
+    background-color: var(--white);
+  }
+
+  .small_circle {
+    width: 5%;
+    top: 15%;
+    left: 22%;
+    border: 1px solid var(--white);
+  }
+  
+
+  .cardholder_name, .card_expiration_date, .card_number {
+    position: absolute;
+    bottom: 8%;
+    font-size: calc(8px + 0.390635vw);
+    letter-spacing: 1px;
+  }
+  
+  .card_number {
+    bottom: 25%;
+    left: 8%;
+    font-size: calc(16px + 0.15vw);
+    letter-spacing: 2px;
+  }
+  
+  .cardholder_name {
+    left: 8%;
+    text-transform: uppercase;
+  }
+  
+  .card_expiration_date {
+    right: 8%;
+  }
+
+  @media screen and (min-width: 992px) {
+    top: 20%;
+    left: 50%;
+    
+
+    .card_number {
+      font-size: calc(11px + 0.5vw);
+    }
+  }
+
+
+}
+
+
+
+
+// USER INFO SECTION
+.user_info {
+  // margin-top: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  Form {
+    padding: 0 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .row {
+      width: 100%;
+      input {
+        width: 100%;
+        height: 50px;
+        border: 1px solid transparent;
+        background: linear-gradient(white, white) padding-box,
+                    linear-gradient(var(--light-violet), var(--light-violet)) border-box;
+        margin-bottom: 3vh;
+        padding-left: calc(12px + 0.390625vw);
+        border-radius: calc(5px + 0.390625vw);
+        font-size: calc(16px + 0.390625vw);
+        outline: none;
+        position: relative;
+        &::-webkit-inner-spin-button, &::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        &::placeholder {
+          opacity: 0.5;
+        }
+
+        &:focus {
+          background: linear-gradient(white, white) padding-box,
+                      var(--active-input-border) border-box;
+        }
+        
+      }
+    }
+
+    label {
+      font-size: 12px;
+      letter-spacing: 2px;
+      padding: 0;
+      margin-bottom: 1vh;
+    }
+
+
+    button {
+      background-color: var(--dark-violet);
+      color: var(--white);
+      font-size: 18px;
+      height: 60px;
+      border-radius: calc(5px + 0.390625vw);
+      outline: none;
+      border: none;
+    }
+  }
+  
+}
+
+.confirmation_screen {
+  display: flex;
+  flex-direction: column;
+
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+  }
+  .completed-icon {
+    width: 80%;
+    height: auto;
+    margin: 0 0 10% 0;
+  }
+
+  .completed-thanks, .completed-description {
+    text-align: center;
+  }
+
+  .completed-thanks {
+    color: var(--dark-violet);
+  }
+
+  .completed-description {
+    color: var(--violet);
+  }
+
+  button {
+    background-color: var(--dark-violet);
+    color: var(--white);
+    font-size: 18px;
+    height: 60px;
+    border-radius: calc(5px + 0.390625vw);
+    outline: none;
+    border: none;
+  }
+
+
+
+
+  @media screen and (min-width: 992px) {
+  }
+}
