@@ -23,8 +23,8 @@ This is a solution to the [Interactive card details form challenge on Frontend M
 
 ### Links
 
-- Solution URL: [GitHub Repo](https://github.com/tdtatum2/Interactive-Card)
-- Live Site URL: [GitHub Pages](https://tdtatum2.github.io/Interactive-Card)
+- Solution URL: [GitHub Repo](https://github.com/tdtatum2/Interactive-Credit-Card)
+- Live Site URL: [GitHub Pages](https://tdtatum2.github.io/Interactive-Credit-Card)
 
 ## My process
 
@@ -36,16 +36,18 @@ This is a solution to the [Interactive card details form challenge on Frontend M
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [ReactBootstrap](https://react-bootstrap.github.io/) - Styling library built for React
+- [Cleave.js](https://nosir.github.io/cleave.js/) - An input formatting library
+- [Animate.css](https://animate.style/) - A CSS animation library
 
 ### What I learned
 
-I learned a lot about utilizing rows and columns to create responsive designs with ease. It was the easiest time I've ever had going from mobile to desktop designs because it was as simple as changing the amount of columns that an element takes up. It was also my first experience with ReactBootstrap's Offcanvas component, as well as dynamically rendering images using HTML5's Picture element with srcSet!
+This was a fun project that taught me even more about responsive designs, input formatting, useState, and useEffect!
 
 ### Continued development
 
-- I want to learn what other useful HTML5 elements I am missing out on using.
-- I want to apply my learnings of this responsive grid layout to my future projects.
-- I want to learn more about complex element placement and alignment practices.
+- I want to sharpen my responsive design skills
+- I want to incorporate more advanced CSS and JS ideas
+- I want to learn other applications of real-time updating UIs
 
 ### Useful resources
 
